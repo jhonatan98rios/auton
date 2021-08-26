@@ -1,0 +1,10 @@
+<svg id="icon-player" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.574" height="32.575" viewBox="0 0 31.574 32.575">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee6946"/>
+      <stop offset="1" stop-color="#ed7d40"/>
+    </linearGradient>
+  </defs>
+  <path id="Caminho_15" data-name="Caminho 15" d="M2960.621,2662.367l1.243-8.449-2.968-.437-.821,5.577a15.936,15.936,0,1,0,2.546,3.309Zm-13.644,20.689a12.787,12.787,0,1,1,10.516-20.042l-1.321,8.979-5.246,3.711,1.732,2.45,5.771-4.083a1.505,1.505,0,0,0,.618-1.006l.626-4.255a12.735,12.735,0,0,1-12.7,14.246Z" transform="translate(-2931.189 -2653.481)" fill="url(#linear-gradient)"/>
+  <path id="Caminho_16" data-name="Caminho 16" d="M2946.977,2665.381a4.889,4.889,0,1,0,4.888,4.889A4.895,4.895,0,0,0,2946.977,2665.381Zm0,6.778a1.889,1.889,0,1,1,1.888-1.889A1.892,1.892,0,0,1,2946.977,2672.159Z" transform="translate(-2931.189 -2653.481)" fill="url(#linear-gradient)"/>
+</svg>

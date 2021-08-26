@@ -1,0 +1,9 @@
+<svg id="icon-tv" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.632" height="25.759" viewBox="0 0 37.632 25.759">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8d8d8d"/>
+      <stop offset="1" stop-color="#555"/>
+    </linearGradient>
+  </defs>
+  <path id="Caminho_11" data-name="Caminho 11" d="M2902.231,2629.87v-20.744H2864.6v20.744h17.316v2.015h-4.02v3h11.042v-3h-4.022v-2.015Zm-34.632-17.744h31.632v14.744H2867.6Z" transform="translate(-2864.599 -2609.126)" fill="url(#linear-gradient)"/>
+</svg>

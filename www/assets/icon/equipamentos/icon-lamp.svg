@@ -1,0 +1,26 @@
+<svg id="icon-lamp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.632" height="26.899" viewBox="0 0 39.632 26.899">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.446" y1="0.184" x2="-0.396" y2="1.109" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8d8d8d"/>
+      <stop offset="1" stop-color="#555"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_29" data-name="Grupo 29" transform="translate(21.589 0.004)">
+    <path id="Caminho_12" data-name="Caminho 12" d="M2850.56,2629.773h-4.043a3.346,3.346,0,0,1-3.342-3.342v-1.759a1.751,1.751,0,0,0-.636-1.3,9.018,9.018,0,0,1,4.979-15.695,9.018,9.018,0,0,1,7.048,15.672,1.851,1.851,0,0,0-.663,1.373v1.7A3.346,3.346,0,0,1,2850.56,2629.773Zm-3.8-3.59h3.548v-1.457a5.471,5.471,0,0,1,1.854-4.044,5.429,5.429,0,0,0-4.255-9.431,5.491,5.491,0,0,0-4.779,4.857,5.391,5.391,0,0,0,1.793,4.588,5.358,5.358,0,0,1,1.838,3.976Z" transform="translate(-2839.517 -2607.628)" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Grupo_30" data-name="Grupo 30" transform="translate(28.048 23.309)">
+    <rect id="Retângulo_6" data-name="Retângulo 6" width="5.126" height="3.59" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Grupo_31" data-name="Grupo 31" transform="translate(10.794)">
+    <path id="Caminho_13" data-name="Caminho 13" d="M2841.539,2629.774H2837.5a3.346,3.346,0,0,1-3.342-3.342v-1.759a1.754,1.754,0,0,0-.637-1.3,9.019,9.019,0,0,1,9.2-15.165l-1.275,3.355a5.428,5.428,0,0,0-5.539,9.129,5.363,5.363,0,0,1,1.837,3.976v1.511h3.8Z" transform="translate(-2830.495 -2607.624)" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Grupo_32" data-name="Grupo 32" transform="translate(17.252 23.309)">
+    <rect id="Retângulo_7" data-name="Retângulo 7" width="5.127" height="3.59" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Grupo_33" data-name="Grupo 33">
+    <path id="Caminho_14" data-name="Caminho 14" d="M2832.517,2629.774h-4.043a3.346,3.346,0,0,1-3.342-3.342v-1.759a1.748,1.748,0,0,0-.637-1.294,9.019,9.019,0,0,1,9.2-15.166l-1.275,3.355a5.429,5.429,0,0,0-5.54,9.129,5.355,5.355,0,0,1,1.839,3.976v1.511h3.8Z" transform="translate(-2821.474 -2607.624)" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Grupo_34" data-name="Grupo 34" transform="translate(6.458 23.309)">
+    <rect id="Retângulo_8" data-name="Retângulo 8" width="5.126" height="3.59" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

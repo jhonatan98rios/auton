@@ -1,0 +1,22 @@
+<svg id="cenas" xmlns="http://www.w3.org/2000/svg" width="17.645" height="18.2" viewBox="0 0 17.645 18.2">
+  <g id="Grupo_214" data-name="Grupo 214" transform="translate(0 4.692) rotate(-17)">
+    <g id="Caminho_135" data-name="Caminho 135" fill="inherit">
+      <path d="M0,0H16.047V5.633H0Z" stroke="none"/>
+      <path d="M 1.499998092651367 1.500000953674316 L 1.499998092651367 4.13252067565918 L 14.54683876037598 4.13252067565918 L 14.54683876037598 1.500000953674316 L 1.499998092651367 1.500000953674316 M -1.9073486328125e-06 9.5367431640625e-07 L 16.04683876037598 9.5367431640625e-07 L 16.04683876037598 5.63252067565918 L -1.9073486328125e-06 5.63252067565918 L -1.9073486328125e-06 9.5367431640625e-07 Z" stroke="none" fill="#c25638"/>
+    </g>
+    <g id="Grupo_213" data-name="Grupo 213" transform="translate(3.236 0.573)">
+      <line id="Linha_38" data-name="Linha 38" y1="4.241" x2="2.866" transform="translate(0 0.012)" fill="inherit" stroke="#c25638" stroke-width="1.5"/>
+      <line id="Linha_40" data-name="Linha 40" y1="4.241" x2="2.866" transform="translate(3.431 0.006)" fill="inherit" stroke="#c25638" stroke-width="1.5"/>
+      <line id="Linha_41" data-name="Linha 41" y1="4.241" x2="2.866" transform="translate(6.861)" fill="inherit" stroke="#c25638" stroke-width="1.5"/>
+    </g>
+  </g>
+  <g id="Grupo_216" data-name="Grupo 216" transform="translate(1.406 8.741)">
+    <g id="Grupo_215" data-name="Grupo 215" transform="translate(0 0)">
+      <g id="Retângulo_74" data-name="Retângulo 74" fill="inherit" stroke="#c25638" stroke-width="1.5">
+        <rect width="16.239" height="9.459" stroke="none"/>
+        <rect x="0.75" y="0.75" width="14.739" height="7.959" fill="inherit"/>
+      </g>
+      <line id="Linha_42" data-name="Linha 42" x2="15.291" transform="translate(0.085 4.375)" fill="inherit" stroke="#c25638" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
