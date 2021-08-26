@@ -1,0 +1,117 @@
+ion-item {
+  --background: transparent;
+  height: 100%;
+  // transform: rotate(-90deg);
+}
+
+ion-range {
+  --bar-height: 32px;
+  --pin-background: red;
+  --knob-background: orange;
+  --bar-background: grey;
+  --bar-border-radius: 32px;
+  --bar-background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #d7fdfe 6.25%,
+    #a5fafc 12.5%,
+    #a2fafc 12.81%,
+    #8ff7fb 18.75%,
+    #77f4f9 25%,
+    #65f2f8 29.06%,
+    #62edf5 31.25%,
+    #59e0ee 37.5%,
+    #50d2e6 43.75%,
+    #45c2dd 50%,
+    #38b2d5 56.25%,
+    #2fa8d0 59.61%,
+    #36a9ca 62.5%,
+    #42acbd 68.75%,
+    #42acbd 68.97%,
+    #7fb59e 75%,
+    #a8bf75 81.25%,
+    #c8c736 87.19%,
+    #c8c636 87.5%,
+    #cab835 92.61%,
+    #cbaf34 93.75%,
+    #ce7330 100%
+  );
+  --bar-background-active: rgba(0, 0, 0, 0.5);
+  --knob-box-shadow: 0px 17px 9px rgba(0, 0, 0, 0.25), 0px 1px 1px rgba(0, 0, 0, 0.48), -2px 2px 4px rgba(0, 0, 0, 0.44),
+    0px 6px 5px rgba(0, 0, 0, 0.48);
+  ion-icon[name="start"] {
+    left: 46px;
+  }
+  #icon-start {
+    padding-right: 12px;
+  }
+  #icon-end {
+    padding-left: 12px;
+  }
+}
+ion-range::part(knob) {
+  border-radius: 50% !important;
+  background: linear-gradient(45deg, #030507 0%, #2d343b 100%);
+  height: 42px;
+  width: 42px;
+  top: 8px;
+  margin-left: -4px;
+  z-index: 5;
+  filter: 0.5px;
+  &::after {
+    content: " ";
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    position: absolute;
+    background: #111619 url("../../../assets/icon/controllers/tracker-slider.svg") no-repeat center;
+    background-size: 16px;
+    width: 38px;
+    height: 38px;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+  }
+
+  // margin-left: 16px;
+}
+ion-range::part(bar) {
+  border: 3px solid #000000 !important;
+  &::before {
+    content: " ";
+    position: absolute;
+    height: 40px;
+    width: calc(100% + 8px);
+    left: -4px;
+    top: -4px;
+    border-radius: 21px;
+    background: rgba(99, 99, 99, 0.514);
+    z-index: -1;
+  }
+}
+ion-range::part(pin) {
+  margin-left: -8px;
+  color: transparent;
+}
+ion-range::part(bar) {
+  padding: 0px 32px 0px 0px;
+  margin-left: -16px;
+}
+ion-range::part(tick) {
+  background: rgba(255, 255, 255, 0.5);
+  width: 1px !important;
+  height: 32px;
+  z-index: 2;
+  top: 8px;
+  // margin-left: 16px;
+}
+ion-range::part(tick-active) {
+  background: rgba(255, 255, 255, 0.12);
+  width: 1px !important;
+  height: 32px;
+  z-index: 2;
+  top: 8px;
+  // margin-left: 16px;
+}

@@ -1,0 +1,116 @@
+.controle-direcional {
+    .botao-meio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: 0.5px;
+        color: #ee6946;
+        text-decoration: none;
+
+        letter-spacing: 5px;
+        padding-left: 5px;
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(50deg,#030507 0%, #2d343b 100%);
+        box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.44);
+
+        &::after{
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+            position: absolute;
+            width: 46px;
+            margin-top: -2px;
+            margin-left: -2px;
+            height: 46px;
+            border-radius: 50%;
+            content: " ";
+            background: linear-gradient(20deg, #111619 0%, #282e34 100%);
+            filter: 0.5px;
+
+        }
+        
+        &::before{
+            position: absolute;
+            content: "OK";
+            border-radius: 50%;
+            filter: 0.5px;
+            z-index: 3;
+        }
+
+    }
+
+    .direcional {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 180px;
+        background: #22272c;
+        border-radius: 150px;
+        // sombras
+        box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.44),
+        0px 1px 1px rgba(0, 0, 0, 0.48),
+        0px 6px 5px rgba(0, 0, 0, 0.48),
+        0px 17px 9px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(60deg,#030507 0%, #2d343b 100%);
+
+        &::after{
+            width: 174px;
+            height: 174px;
+            border-radius: 50%;
+            background: linear-gradient(20deg, #111619 0%, #282e34 100%);
+            content: " ";
+            position: absolute;
+            // blur 
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+            filter: blur(2px);
+            z-index: 1;
+
+
+        }
+
+        .direcional-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 180px;
+            height: 180px;
+            z-index: 2;
+            background: url("../../../assets/icon/controllers/cruz-direcional.svg") center center / 126px 126px no-repeat;
+        
+            .botao {
+                font-size: 35px;
+                color: #ee6946;
+                position: relative;
+    
+                &-cima {
+                    bottom: 20px;
+                    left: 8px;
+                    right: 0;
+                }
+    
+                &-baixo {
+                    top: 20px;
+                    left: 8px;
+                }
+    
+                &-esquerda {
+                    left: 20px;
+                }
+    
+                &-direita {
+                    right: 20px;
+                }
+            }
+
+        }
+
+    }
+}

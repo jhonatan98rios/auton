@@ -1,0 +1,6 @@
+<a href="javascript:void(0);" class="botao-controlhe" [ngClass]="{'circular': circular, 'numeric': isNumeric}"
+  (click)="onClick()">
+  <span *ngIf="label" class="label">{{label}}</span>
+  <ion-icon *ngIf="iconName" [name]="iconName" [ngStyle]="{'font-size': '25px', 'color': 'cor'}"></ion-icon>
+  <ion-icon *ngIf="!iconName && !label" [src]="icon" [ngStyle]="{'font-size': '25px', 'color': cor}"></ion-icon>
+</a>

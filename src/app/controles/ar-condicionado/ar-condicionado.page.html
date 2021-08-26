@@ -1,0 +1,28 @@
+<app-header titulo="Ar Condicionado" [callbackBackButton]="voltarParaComodos"
+  icon="./assets/equipamentos/icon-ac.svg"></app-header>
+
+<ion-content>
+  <div class="auton-content">
+    <div class="controlhe-ar">
+      <div class="header">
+        <app-botao-circular circular icon="./assets/icon/power.svg" cor="#03F03A" [callbackClickObject]="powerObjectCallback">
+        </app-botao-circular>
+        <div class="titulo" [ngClass]="{'cold': isCold, 'hot': !isCold}">
+          <span class="temperatura">{{temperatura}}</span>
+          <span class="unidade-medida">ºC</span>
+        </div>
+      </div>
+      <div class="termometro">
+        <app-slider-temperatura [callbackObjectChangeSlider]="changeObjectSliderTemp"></app-slider-temperatura>
+      </div>
+      <div class="botoes">
+        <app-botao-circular icon="./assets/icon/controllers/ac-modo.svg" [callbackClickObject]="modoObjectCallBack"></app-botao-circular>
+        <!-- <app-botao-circular circular icon="./assets/icon/controllers/ac-temp.svg">
+        </app-botao-circular> -->
+        <app-botao-circular circular icon="./assets/icon/controllers/ac-aba.svg" [callbackClickObject]="abaObjectCallBack">
+        </app-botao-circular>
+        <app-botao-circular icon="./assets/icon/controllers/ac-vent.svg" [callbackClickObject]="vetObjectCallBack"></app-botao-circular>
+      </div>
+    </div>
+  </div>
+</ion-content>

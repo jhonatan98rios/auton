@@ -1,0 +1,73 @@
+.projetor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .header {
+    }
+
+    .control-body {
+        margin: auto 0;
+
+        display: flex;
+        align-items: center;
+
+        .botoes-volume {
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+
+            .texto {
+                text-align: center;
+                margin: 20px 0;
+                font-weight: 300;
+                font-size: 10px;
+                letter-spacing: 0.35em;
+                color: #f9fafb;
+            }
+
+            app-botao-circular {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    .botoes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:not(:last-of-type) {
+                margin-right: 50px;
+            }
+
+            .icon-label {
+                margin-top: 7px;
+
+                font-family: Fracktif;
+                font-weight: 300;
+                font-size: 10px;
+                letter-spacing: 0.14em;
+                text-align: center;
+                color: #f9fafb;
+                text-transform: uppercase;
+            }
+        }
+
+        &-baixo {
+            margin-top: 35px;
+
+            app-botao-circular {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

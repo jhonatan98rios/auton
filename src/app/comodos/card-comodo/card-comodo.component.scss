@@ -1,0 +1,40 @@
+.card-comodo-container {
+    background: linear-gradient(52deg, rgba(17,22,25,1) 0%, rgba(0,0,0,1) 30%, rgba(76,84,92,1) 100%);
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.43), 1px 5px 5px 0px rgba(0, 0, 0, 0.04);
+
+    .card-comodo {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 13px 17px 26px;
+        border-radius: 9px;
+        background: linear-gradient(55deg, rgba(17,22,25,1) 0%, rgba(49,57,64,1) 98%);
+        // box-shadow: 0px 2px #111619;
+        // edit
+    //   edit-end
+        .infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .comodo {
+                &-icon {
+                    margin-bottom: 20px;
+                }
+
+                &-nome {
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-size: 10px;
+                    letter-spacing: 0.14em;
+                    color: #f9fafb;
+                }
+            }
+        }
+
+        .icon-abrir-detalhes {
+            margin-left: auto;
+        }
+    }
+}

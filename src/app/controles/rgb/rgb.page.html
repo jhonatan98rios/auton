@@ -1,0 +1,37 @@
+<app-header titulo="RGB" [callbackBackButton]="voltarParaComodos" icon="./assets/icon/equipamentos/icon-lamp.svg">
+</app-header>
+<ion-content>
+
+  <div class="auton-content">
+
+    <app-botao-circular class="btn-power" circular icon="./assets/icon/power.svg" cor="#03F03A">
+    </app-botao-circular>
+
+    <div class="controle-rgb">
+
+      <div class="rgb-0" (click)="changeColor('WHITE')">
+      </div>
+
+      <div class="rgb-1" (click)="changeColor('YELLOW')">
+      </div>
+
+      <div class="rgb-2" (click)="changeColor('GREEN')">
+      </div>
+
+      <div class="rgb-3" (click)="changeColor('BLUE')">
+      </div>
+
+      <div class="rgb-4" (click)="changeColor('RED')">
+      </div>
+
+      <ion-range (ionChange)="change($event)" min="1" max="100" step="1">
+        <ion-icon slot="start" size="small" name="sunny" style="color: orange;opacity: .7;"></ion-icon>
+        <ion-icon slot="end" name="sunny" style="color: orange;"></ion-icon>
+      </ion-range>
+
+    </div>
+
+
+  </div>
+
+</ion-content>

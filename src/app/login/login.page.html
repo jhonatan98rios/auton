@@ -1,0 +1,39 @@
+<ion-content>
+  <div class="login">
+    <img class="logo" src="../../assets/logo/logo_auton.svg">
+
+    <form class="auton-form login-form" #form="ngForm" (ngSubmit)="login()">
+
+      <div class="auton-form-input-group">
+        <label for="email" class="auton-form-input-group-label">Login</label>
+        <input id="email"  name="user" class="auton-form-input-group-input"  [(ngModel)]="user" style="text-transform: none;"/>
+      </div>
+
+      <div class="auton-form-input-group" style="margin-top: 15px;">
+        <label type="text" for="senha" class="auton-form-input-group-label">Senha</label>
+        <div style="display: flex;align-items: center;">
+          <input id="senha" name="passwd" [type]="mostrarSenha ? 'text' : 'password'" class="auton-form-input-group-input" style="text-transform: none;"  
+          [(ngModel)]="passwd"/>
+          <ion-icon *ngIf="!mostrarSenha" name="eye-outline" class="auton-form-input-group-input-icon-senha" (click)="toggleInputSenha()"></ion-icon>
+          <ion-icon *ngIf="mostrarSenha" name="eye-off-outline" class="auton-form-input-group-input-icon-senha" (click)="toggleInputSenha()"></ion-icon>
+        </div>
+      </div>
+
+      <div class="auton-form-input-group" style="margin-top: 15px;">
+        <label type="text" for="ddns" class="auton-form-input-group-label">DDNS</label>
+        <input id="ddns" type="text" name="ddns" [(ngModel)]="ddns" class="auton-form-input-group-input"/>
+      </div>
+
+      <button type="submit" class="auton-button primary" style="margin-top: 25px;">Entrar</button>
+    </form>
+
+    <div class="login-actions">
+      <!-- Caso tenha cadastro e recuperação de senha, colocar os botões aqui -->
+    </div>
+
+    <div class="login-footer">
+      <span>BY SOLUTECH</span>
+      <span class="versao">VERSÃO 1.0.0</span>
+    </div>
+  </div>
+</ion-content>

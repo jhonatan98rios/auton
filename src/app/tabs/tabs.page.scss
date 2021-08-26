@@ -1,0 +1,53 @@
+.auton-tabs {
+    width: 100%;
+    display: flex;
+
+    ion-tab-bar {
+        padding: 10px 30px 10px 30px;
+        background: rgba(32,37,42,0);
+        color: #ee6946;
+        box-shadow: 0 -2px 13px rgba(0,0,0,.30);
+
+        ion-tab-button {
+            height: 46px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: rgba(35,42,48,0);
+            color: #ee6946;
+
+            .button-native {
+                padding: 0;
+                &:hover {
+                    color: #ee6946;
+                }
+            }
+
+            ion-icon {
+                margin: 0;
+            }
+
+            ion-label {
+                display: none;
+                margin: 0;
+                font-family: Ruberoid;
+                font-weight: 300;
+                font-size: 12px;
+                letter-spacing: 0.1em;
+            }
+
+            &.tab-selected {
+                padding: 0px 25px;
+                border-radius: 40px;
+                background: #000;
+                border: 1px solid rgba(221, 137, 137, 0);
+
+                ion-label {
+                    display: block;
+                    margin-left: 10px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

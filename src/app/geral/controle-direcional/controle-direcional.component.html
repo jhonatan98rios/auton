@@ -1,0 +1,13 @@
+<div class="controle-direcional">
+  <div class="direcional">
+    <div class="direcional-container">
+      <ion-icon name="chevron-back-outline" class="botao botao-direita" (click)="callbackLeftClickObject.callback(callbackLeftClickObject.self)"></ion-icon>
+      <div style="display: flex;flex-direction: column;">
+        <ion-icon name="chevron-up" class="botao botao-cima" (click)="callbackUpClickObject.callback(callbackUpClickObject.self)"></ion-icon>
+        <a href="javascript:void(0);" class="botao-meio" (click)="callbackOkClickObject.callback(callbackOkClickObject.self)"></a>
+        <ion-icon name="chevron-down" class="botao botao-baixo" (click)="callbackDownClickObject.callback(callbackDownClickObject.self)"></ion-icon>
+      </div>
+      <ion-icon name="chevron-forward-outline" class="botao botao-esquerda" (click)="callbackRightClickObject.callback(callbackRightClickObject.self)" ></ion-icon>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<app-header titulo="Dispositivos" [callbackBackButton]="voltarParaComodos"></app-header>
+
+<ion-content>
+  <div class="auton-content">
+    <div class="dispositivos">
+      <div class="card-dispositivo-container" *ngFor="let dispositivo of dispositivos"
+        (click)="abrirPaginaControle(dispositivo)">
+        <div class="card-dispositivo" [ngClass]="{'active': dispositivo.active}">
+          <ion-icon class="dispositivo-icon" [src]="dispositivo.icon"></ion-icon>
+          <div class="infos">
+            <div class="container-nome-desc">
+              <span class="dispositivo-nome">{{dispositivo.nome}}</span>
+              <span class="dispositivo-desc">{{dispositivo.comodo}}</span>
+            </div>
+            <ion-toggle [(ngModel)]="dispositivo.active" *ngIf="dispositivo.type == 'relay'" (click)="dispositivo.active = !dispositivo.active"></ion-toggle>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

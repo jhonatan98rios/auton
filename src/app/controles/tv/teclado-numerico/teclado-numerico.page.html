@@ -1,0 +1,38 @@
+<div class="teclado">
+    <div class="teclado-header">
+        <ion-icon class="close-icon" (click)="dismiss()" name="close-outline"></ion-icon>
+        <span class="title" *ngIf="!number">Teclado</span>
+        <span class="title" *ngIf="number">{{number}}</span>
+    </div>
+    <div class="divisoria"></div>
+    <div class="teclado-content">
+        <div class="linha linha-1">
+            <app-botao-circular isNumeric circular label="1" [callbackClickObject]="getOnClickObject('1')">
+            </app-botao-circular>
+            <app-botao-circular isNumeric circular label="2" [callbackClickObject]="getOnClickObject('2')">
+            </app-botao-circular>
+            <app-botao-circular isNumeric circular label="3" [callbackClickObject]="getOnClickObject('3')">
+            </app-botao-circular>
+        </div>
+        <div class="linha linha-2">
+            <app-botao-circular isNumeric circular label="4" [callbackClickObject]="getOnClickObject('4')">
+            </app-botao-circular>
+            <app-botao-circular isNumeric circular label="5" [callbackClickObject]="getOnClickObject('5')">
+            </app-botao-circular>
+            <app-botao-circular isNumeric circular label="6" [callbackClickObject]="getOnClickObject('6')">
+            </app-botao-circular>
+        </div>
+        <div class="linha linha-3">
+            <app-botao-circular isNumeric circular label="7" [callbackClickObject]="getOnClickObject('7')">
+            </app-botao-circular>
+            <app-botao-circular isNumeric circular label="8" [callbackClickObject]="getOnClickObject('8')">
+            </app-botao-circular>
+            <app-botao-circular isNumeric circular label="9" [callbackClickObject]="getOnClickObject('9')">
+            </app-botao-circular>
+        </div>
+        <div class="linha linha-4">
+            <app-botao-circular isNumeric circular label="0" [callbackClickObject]="getOnClickObject('0')">
+            </app-botao-circular>
+        </div>
+    </div>
+</div>

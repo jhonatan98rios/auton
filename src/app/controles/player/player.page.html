@@ -1,0 +1,39 @@
+<app-header titulo="Player" [callbackBackButton]="voltarParaComodos" icon="./assets/icon/equipamentos/icon-player.svg">
+</app-header>
+
+<ion-content>
+  <div class="auton-content" style="height: 100%;">
+    <div class="controlhe-player">
+      <div class="header">
+        <app-botao-circular circular icon="./assets/icon/power.svg" [callbackClick]="power" cor="#03F03A">
+        </app-botao-circular>
+        <div class="btn-container" style="margin-left: auto;">
+          <app-botao-circular circular icon="./assets/icon/controllers/tv-mute.svg"
+            [callbackClickObject]="muteObjectCallBack">
+          </app-botao-circular>
+          <span class="icon-label">mudo</span>
+        </div>
+      </div>
+      
+      <div class="botoes-canais">
+        <app-botao-circular iconName="chevron-up-outline" [callbackClickObject]="addChObjectCallBack">
+        </app-botao-circular>
+        <span class="texto">CH</span>
+        <app-botao-circular iconName="chevron-down-outline" [callbackClickObject]="removeChObjectCallBack">
+        </app-botao-circular>
+      </div>
+
+      <div class="botoes-baixo">
+        <div class="botao">
+          <ion-icon src="/assets/icon/controllers/player-first-last.svg" style="transform: rotate(-90deg);"></ion-icon>
+        </div>
+        <div class="botao">
+          <ion-icon src="/assets/icon/controllers/player-pause.svg"></ion-icon>
+        </div>
+        <div class="botao">
+          <ion-icon src="/assets/icon/controllers/player-first-last.svg" style="transform: rotate(90deg);"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

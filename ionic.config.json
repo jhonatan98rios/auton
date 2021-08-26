@@ -1,0 +1,8 @@
+{
+  "name": "auton",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

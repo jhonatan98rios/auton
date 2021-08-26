@@ -1,0 +1,24 @@
+.alterar-senha {
+    display: flex;
+    flex-direction: column;
+    padding: 88px 50px 95px 50px;
+
+    .foto-user {
+        align-self: center;
+    }
+    .subtexto {
+        align-items: center;
+        display: flex;
+        margin-top: 17px;
+        flex-direction: column;
+        margin-bottom: 18px;
+    }
+
+    .alinhamento-botoes-meio {
+        margin-bottom: 10px;
+    }
+
+    .botao {
+        margin-top: 26px;
+    }
+}

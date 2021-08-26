@@ -1,0 +1,69 @@
+<div class="teclado">
+    <div class="teclado-header">
+        <ion-icon class="close-icon" (click)="dismiss()" name="close-outline"></ion-icon>
+        <span class="title">FUNÇÕES ESPECIAIS</span>
+    </div>
+    <div class="divisoria"></div>
+    <div class="teclado-content">
+        <div class="linha linha-1">
+            <div class="botao-extra vermelho" (click)="onButtonClick('RED')">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/bolinha-quadrado-vermelho.svg'"
+                    style="color: #F7F7F7;"></ion-icon>
+            </div>
+            <div class="botao-extra verde" (click)="onButtonClick('GREEN')">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/bolinha-quadrado-verde.svg'"
+                    style="color: #F7F7F7;font-size: 29px;"></ion-icon>
+            </div>
+            <div class="botao-extra amarelo" (click)="onButtonClick('YELLOW')">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/bolinha-quadrado-amarelo.svg'"
+                    style="color: #F7F7F7;font-size: 29px;"></ion-icon>
+            </div>
+            <div class="botao-extra azul" (click)="onButtonClick('CYAN')">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/bolinha-quadrado-azul.svg'"
+                    style="color: #F7F7F7;font-size: 26px;"></ion-icon>
+            </div>
+        </div>
+        <div class="linha linha-2">
+            <div class="botao-extra" (click)="onButtonClick('NETFLIX')">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/netflix-icon.svg'"
+                    style="font-size: 21px;"></ion-icon>
+            </div>
+            <div class="botao-extra" (click)="onButtonClick('YOUTUBE')">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/youtube-icon.svg'"
+                    style="font-size: 28px;"></ion-icon>
+            </div>
+            <div class="botao-extra" (click)="onButtonClick('GBPLAY')">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/globoplay-icon.svg'"
+                    style="font-size: 40px;"></ion-icon>
+            </div>
+            <div class="botao-extra" (click)="onButtonClick('APRIME')">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/prime-icon.svg'"
+                    style="font-size: 30px;"></ion-icon>
+            </div>
+        </div>
+        <div class="linha linha-3">
+            <div class="botao-extra">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/voltar-musica.svg'"
+                    style="font-size: 18px;"></ion-icon>
+            </div>
+            <div class="botao-extra">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/pause-musica.svg'"
+                    style="font-size: 18px;"></ion-icon>
+            </div>
+            <div class="botao-extra">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/stop-musica.svg'"
+                    style="font-size: 18px;"></ion-icon>
+            </div>
+            <div class="botao-extra">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/proxima-musica.svg'"
+                    style="font-size: 18px;"></ion-icon>
+            </div>
+        </div>
+        <div class="linha linha-4">
+            <div class="botao-extra">
+                <ion-icon class="icon" [src]="'./assets/icon/controllers/teclado-mais/rec-musica.svg'"
+                    style="font-size: 38px;"></ion-icon>
+            </div>
+        </div>
+    </div>
+</div>

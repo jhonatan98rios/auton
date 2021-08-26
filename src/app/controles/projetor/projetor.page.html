@@ -1,0 +1,47 @@
+<app-header titulo="Projetor" [callbackBackButton]="voltarParaComodos" icon="./assets/equipamentos/icon-projetor.svg">
+</app-header>
+
+
+<ion-content>
+  <div class="auton-content" style="height: 100%;">
+    <div class="projetor">
+      <div class="header">
+        <app-botao-circular circular icon="./assets/icon/power.svg" cor="#03F03A"
+          [callbackClickObject]="pwrOnObjectCallBack" style="width: 50px;height: 50px;">
+        </app-botao-circular>
+      </div>
+      <div class="control-body">
+        <div class="botoes-volume">
+          <app-botao-circular iconName="add-outline" [callbackClickObject]="addVolumeObjectCallBack">
+          </app-botao-circular>
+          <span class="texto">VOL</span>
+          <app-botao-circular iconName="remove-outline" [callbackClickObject]="removeVolumeObjectCallBack">
+          </app-botao-circular>
+        </div>
+        <app-controle-direcional [callbackOkClickObject]="okObjectCallback" [callbackUpClickObject]="upObjectCallback"
+          [callbackDownClickObject]="downObjectCallback" [callbackLeftClickObject]="leftObjectCallback"
+          [callbackRightClickObject]="rightObjectCallback"></app-controle-direcional>
+      </div>
+      <div class="botoes botoes-baixo">
+        <div class="btn-container">
+          <app-botao-circular circular icon="./assets/icon/controllers/tv-menu.svg"
+            [callbackClickObject]="menuObjectCallBack">
+          </app-botao-circular>
+          <span class="icon-label">menu</span>
+        </div>
+        <div class="btn-container">
+          <app-botao-circular circular icon="./assets/icon/controllers/tv-return.svg"
+            [callbackClickObject]="returnObjectCallBack">
+          </app-botao-circular>
+          <span class="icon-label">retornar</span>
+        </div>
+        <div class="btn-container">
+          <app-botao-circular circular icon="./assets/icon/controllers/tv-home.svg"
+            [callbackClickObject]="homeObjectCallBack">
+          </app-botao-circular>
+          <span class="icon-label">auto</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

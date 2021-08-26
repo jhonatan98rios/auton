@@ -1,0 +1,20 @@
+<app-header titulo="Perfil"></app-header>
+<ion-content>
+
+  <div class="perfil">
+
+    <div class="auton-form-input-group">
+      <label for="ddns" class="auton-form-input-group-label">DDNS</label>
+    </div>
+
+    <div style="display: flex;align-items: center;">
+      <input id="ddns" type="text" [(ngModel)]="ddns" class="auton-form-input-group-input"/>
+    </div>
+
+    <div class="botao">
+      <button type="submit" class="auton-button primary" style="margin-top: 25px;" (click)="salvarDDNS()">Salvar</button>
+    </div>
+
+  </div>
+
+</ion-content>

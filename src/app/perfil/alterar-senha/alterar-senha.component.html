@@ -1,0 +1,50 @@
+<app-header titulo="Perfil"  [callbackBackButton]="voltarParaPerfil"></app-header>
+<ion-content>
+
+  <div class="alterar-senha">
+
+
+    <div class="foto-user">
+      <img class="logo" src="../../assets/icon/user.svg">
+    </div>
+
+
+    <div class="subtexto">
+      <label>AntonioQM</label>
+    </div>
+
+
+    <div class="auton-form-input-group">
+      <label type="text" for="senha" class="auton-form-input-group-label">Nova senha</label>
+
+      <div class="alinhamento-botoes-meio" style="display: flex;align-items: center;">
+        <input id="senha" [type]="mostrarSenha ? 'text' : 'password'" class="auton-form-input-group-input"
+          value="minhasenha" style="text-transform: none;" />
+        <ion-icon *ngIf="!mostrarSenha" name="eye-outline" class="auton-form-input-group-input-icon-senha"
+          (click)="toggleInputSenha()"></ion-icon>
+        <ion-icon *ngIf="mostrarSenha" name="eye-off-outline" class="auton-form-input-group-input-icon-senha"
+          (click)="toggleInputSenha()"></ion-icon>
+      </div>
+    </div>
+
+    <div class="auton-form-input-group">
+      <label type="text" for="senha" class="auton-form-input-group-label">Confirmar nova senha</label>
+
+      <div style="display: flex;align-items: center;">
+        <input id="senha" [type]="mostrarSenhaConfirmarSenha ? 'text' : 'password'" class="auton-form-input-group-input"
+          value="minhasenha" style="text-transform: none;" />
+        <ion-icon *ngIf="!mostrarSenhaConfirmarSenha" name="eye-outline" class="auton-form-input-group-input-icon-senha"
+          (click)="toggleInputConfirmarSenha()"></ion-icon>
+        <ion-icon *ngIf="mostrarSenhaConfirmarSenha" name="eye-off-outline" class="auton-form-input-group-input-icon-senha"
+          (click)="toggleInputConfirmarSenha()"></ion-icon>
+      </div>
+    </div>
+
+    <div class="botao">
+      <button type="submit" class="auton-button primary" style="margin-top: 25px;">Salvar</button>
+    </div>
+
+
+  </div>
+
+</ion-content>

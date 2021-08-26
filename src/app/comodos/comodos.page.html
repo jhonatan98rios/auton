@@ -1,0 +1,10 @@
+<app-header titulo="Cômodos"></app-header>
+<ion-content>
+  <div class="auton-content">
+    <div class="comodos">
+      <app-card-comodo *ngFor="let comodo of comodos;"
+      icon="./assets/icon/comodos/suite.svg" [comodo]="comodo">
+      </app-card-comodo>
+    </div>
+  </div>
+</ion-content>

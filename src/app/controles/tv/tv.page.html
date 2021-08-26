@@ -1,0 +1,81 @@
+<app-header titulo="TV" [callbackBackButton]="voltarParaComodos" icon="./assets/icon/equipamentos/icon-tv.svg">
+</app-header>
+
+<ion-content>
+  <div class="auton-content">
+    <div class="controlhe-tv">
+      <div class="header">
+        <div class="botoes-container">
+          <app-botao-circular circular icon="./assets/icon/power.svg" cor="#03F03A"
+            [callbackClickObject]="pwrOnObjectCallBack">
+          </app-botao-circular>
+          <app-botao-circular class="btn-power-off" circular icon="./assets/icon/power.svg" cor="red"
+            [callbackClickObject]="pwrOffObjectCallBack">
+          </app-botao-circular>
+        </div>
+      </div>
+      <div class="divisoria"></div>
+      <div class="botoes botoes-acima">
+        <div class="btn-container">
+          <app-botao-circular class="btn-cima" label="123" cor="#03F03A"
+            [callbackClickObject]="openNumericKeyboardObjectCallback">
+          </app-botao-circular>
+        </div>
+        <div class="btn-container">
+          <app-botao-circular class="btn-cima" label="MAIS" cor="#03F03A"
+            [callbackClickObject]="openMoreKeyboardObjectCallback">
+          </app-botao-circular>
+        </div>
+        <div class="btn-container">
+          <app-botao-circular class="btn-cima" label="AV" cor="#03F03A" [callbackClickObject]="openAvKeyboardObjectCallback">
+          </app-botao-circular>
+        </div>
+      </div>
+      <div class="primeira-linha">
+        <div class="botoes-volume">
+          <app-botao-circular iconName="add-outline" [callbackClickObject]="addVolumeObjectCallBack">
+          </app-botao-circular>
+          <span class="texto">VOL</span>
+          <app-botao-circular iconName="remove-outline" [callbackClickObject]="removeVolumeObjectCallBack">
+          </app-botao-circular>
+        </div>
+        <app-controle-direcional [callbackOkClickObject]="okObjectCallback" [callbackUpClickObject]="upObjectCallback"
+          [callbackDownClickObject]="downObjectCallback" [callbackLeftClickObject]="leftObjectCallback"
+          [callbackRightClickObject]="rightObjectCallback"></app-controle-direcional>
+        <div class="botoes-canais">
+          <app-botao-circular iconName="chevron-up-outline" [callbackClickObject]="addChObjectCallBack">
+          </app-botao-circular>
+          <span class="texto">CH</span>
+          <app-botao-circular iconName="chevron-down-outline" [callbackClickObject]="removeChObjectCallBack">
+          </app-botao-circular>
+        </div>
+      </div>
+      <div class="botoes botoes-baixo">
+        <div class="btn-container" style="margin-top: -25px;">
+          <app-botao-circular circular icon="./assets/icon/controllers/tv-menu.svg"
+            [callbackClickObject]="menuObjectCallBack">
+          </app-botao-circular>
+          <span class="icon-label">menu</span>
+        </div>
+        <div class="btn-container">
+          <app-botao-circular circular icon="./assets/icon/controllers/tv-return.svg"
+            [callbackClickObject]="returnObjectCallBack">
+          </app-botao-circular>
+          <span class="icon-label">retornar</span>
+        </div>
+        <div class="btn-container">
+          <app-botao-circular circular icon="./assets/icon/controllers/tv-mute.svg"
+            [callbackClickObject]="muteObjectCallBack">
+          </app-botao-circular>
+          <span class="icon-label">mudo</span>
+        </div>
+        <div class="btn-container" style="margin-top: -25px;">
+          <app-botao-circular circular icon="./assets/icon/controllers/tv-home.svg"
+            [callbackClickObject]="homeObjectCallBack">
+          </app-botao-circular>
+          <span class="icon-label">home</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

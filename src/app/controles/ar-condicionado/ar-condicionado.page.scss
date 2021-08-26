@@ -1,0 +1,58 @@
+.controlhe-ar {
+    .header {
+        display: flex;
+
+        app-botao-circular {
+            height: 50px;
+            width: 50px;
+        }
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+
+            &.cold {
+                color: #9bf9fc;
+            }
+
+            &.hot {
+                color: #cd7e30;
+            }
+
+            .temperatura {
+                font-weight: normal;
+                font-size: 100px;
+                line-height: 20px;
+            }
+
+            .unidade-medida {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    .botoes {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        app-botao-circular {
+            height: 50px;
+            width: 50px;
+            margin-right: 30px;
+        }
+    }
+
+    .termometro {
+        margin-top: 150px;
+
+        display: flex;
+        justify-content: center;
+
+        app-slider-temperatura {
+            width: 100%;
+        }
+    }
+}

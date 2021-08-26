@@ -1,0 +1,94 @@
+.teclado {
+    .teclado-header {
+        display: flex;
+        align-items: center;
+
+        padding: 20px 0 20px 20px;
+        .title {
+            margin-left: 30px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .close-icon {
+            font-size: 30px;
+            color: #8a8a8a;
+        }
+    }
+
+    .divisoria {
+        border-bottom: 1px solid #1e2327;
+    }
+
+    .teclado-content {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .linha {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            app-botao-circular {
+                &:not(:last-of-type) {
+                    margin-right: 25px;
+                }
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 36px;
+            }
+
+            .botao-extra {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 52px;
+                height: 56px;
+                font-size: 10px;
+                border-radius: 10px;
+
+                background: linear-gradient(#111619 0%, #282e34 100%);
+                filter: 0.5px;
+
+                &:not(:last-of-type) {
+                    margin-right: 20px;
+                }
+
+                &.vermelho {
+                    background: linear-gradient(rgba(126, 0, 0, 0.99) 0%, #e52209 100%);
+                }
+
+                &.verde {
+                    background: linear-gradient(rgba(60, 101, 4, 0.99) 0%, #57d607 100%);
+                }
+
+                &.amarelo {
+                    background: linear-gradient(rgba(235, 129, 5, 0.99) 0%, #fcc038 100%);
+                }
+
+                &.azul {
+                    background: linear-gradient(rgba(1, 87, 204, 0.99) 0%, #66d5fd 100%);
+                }
+            }
+
+            &.linha-1 {
+            }
+
+            &.linha-2 {
+            }
+
+            &.linha-3 {
+            }
+
+            &.linha-4 {
+                .botao-extra {
+                    width: 96px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}

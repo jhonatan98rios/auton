@@ -1,0 +1,11 @@
+.comodos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -24px;
+
+    app-card-comodo {
+        width: 45%;
+        margin-bottom: 25px;
+        margin-right: 12px;
+    }
+}

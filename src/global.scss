@@ -1,0 +1,148 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.auton-content {
+    padding: 35px 35px 55px 35px;
+}
+
+// Toggle
+ion-toggle {
+    --handle-border-radius: 14px 14px 14px 14px;
+
+    transform: rotate(-90deg);
+    margin-left: auto;
+    margin-top: -3px;
+
+    --background: linear-gradient(90deg, rgba(32, 40, 44, 1) 0%, rgba(3, 10, 20, 1) 100%);
+    --background-checked: linear-gradient(90deg, rgba(32, 40, 44, 1) 0%, rgba(3, 10, 20, 1) 100%);
+    --handle-background-checked: url(/assets/icon/toggle-checked.svg) 33px -2px;
+    --handle-background: url(/assets/icon/toggle.svg) 30px 45px;
+    --handle-height: 19px;
+    --handle-width: 23px;
+    width: 40px;
+    height: 20px;
+}
+
+ion-toggle::before {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 40px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+    font-size: 8px;
+    content: " ";
+    border-radius: 12px;
+    z-index: 1;
+}
+ion-toggle::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 42px;
+    height: 22px;
+    border: 1px solid #485157b8;
+    font-size: 8px;
+    content: " ";
+    border-radius: 12px;
+    z-index: -1;
+}
+
+//Classes dos forms do auton
+.auton-form {
+    font-family: Fracktif;
+    font-weight: normal;
+
+    &-input-group {
+        display: flex;
+        flex-direction: column;
+
+        &-label {
+            margin-left: 8px;
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 0.11em;
+            color: #505d67;
+        }
+
+        &-input {
+            z-index: 1;
+            margin-top: 5px;
+            width: 100%;
+            background: #13171a;
+            border-radius: 10px;
+            padding: 17px 70px 18px 15px;
+            border: none;
+
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-align: left;
+            color: #f9fafb;
+
+            &-icon-senha {
+                z-index: 2;
+                color: #505d67;
+                font-size: 25px;
+                position: absolute;
+                right: 70px;
+            }
+        }
+    }
+}
+
+//Auton button
+.auton-button {
+    &.primary {
+        width: 100%;
+        background: linear-gradient(#dc3416 0%, #e26200 100%);
+        filter: 0.5px;
+        padding: 15px 100px;
+
+        text-transform: uppercase;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.11em;
+        color: #fff;
+    }
+
+    &-secondary {
+    }
+}
+
+.auton-controle-button {
+}
+
+
+@font-face {
+    font-family: 'Ruberoid-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/fonts/Ruberoid/Ruberoid-Bold.otf');
+  }
+
+  

@@ -1,0 +1,39 @@
+.botao-controlhe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+    filter: 0.5px;
+    border-radius: 10px;
+    background: linear-gradient(40deg, #030507 0%, #2d343b 100%);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.44), 1px 8px 9px rgb(0 0 0 / 20%);
+    text-decoration: none;
+
+    .label {
+        font-size: inherit;
+    }
+
+    &.numeric {
+        width: 70px;
+        height: 70px;
+
+        .label {
+            font-size: 40px;
+        }
+    }
+
+    &.circular {
+        border-radius: 50%;
+
+        &::after {
+            width: 46px;
+            height: 46px;
+            position: absolute;
+            content: " ";
+            background: linear-gradient(20deg, #111619 0%, #282e34 100%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+}

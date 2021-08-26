@@ -1,0 +1,13 @@
+<svg id="icon-ac" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.324" height="27.657" viewBox="0 0 44.324 27.657">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8d8d8d"/>
+      <stop offset="1" stop-color="#555"/>
+    </linearGradient>
+  </defs>
+  <path id="Caminho_83" data-name="Caminho 83" d="M2861.349,2680.5h-38.543a2.894,2.894,0,0,0-2.891,2.89v8.134a4.686,4.686,0,0,0,4.681,4.681h34.963a4.686,4.686,0,0,0,4.68-4.681v-8.134A2.893,2.893,0,0,0,2861.349,2680.5Zm-.11,11.024a1.682,1.682,0,0,1-1.68,1.681H2824.6a1.683,1.683,0,0,1-1.681-1.681v-.222h30.072v-3h-30.072v-4.8h38.324Z" transform="translate(-2819.915 -2680.503)" fill="url(#linear-gradient)"/>
+  <rect id="Retângulo_35" data-name="Retângulo 35" width="3.19" height="3" transform="translate(35.847 7.802)" fill="url(#linear-gradient)"/>
+  <path id="Caminho_84" data-name="Caminho 84" d="M2850.593,2698.547a2.1,2.1,0,0,1,.03,2.571l2.392,1.811a5.074,5.074,0,0,0,.85-4.382Z" transform="translate(-2819.915 -2680.503)" fill="url(#linear-gradient)"/>
+  <path id="Caminho_85" data-name="Caminho 85" d="M2843.627,2698.547h-3.272a2.1,2.1,0,0,1,.03,2.571,5.091,5.091,0,0,0,.848,7.042l1.9-2.326a2.1,2.1,0,0,1-.351-2.905A5.081,5.081,0,0,0,2843.627,2698.547Z" transform="translate(-2819.915 -2680.503)" fill="url(#linear-gradient)"/>
+  <path id="Caminho_86" data-name="Caminho 86" d="M2830.115,2698.547a2.1,2.1,0,0,1,.031,2.572l2.393,1.809a5.081,5.081,0,0,0,.849-4.381Z" transform="translate(-2819.915 -2680.503)" fill="url(#linear-gradient)"/>
+</svg>
